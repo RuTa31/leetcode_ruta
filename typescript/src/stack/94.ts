@@ -15,9 +15,9 @@ function inorderTraversal(root: TreeNode | null): number[] {
 
   function traverse(node: TreeNode | null) {
     if (node === null) return;
-    traverse(node.left); // Зүүн мод руу
-    result.push(node.val); // Үндсэн утга
-    traverse(node.right); // Баруун мод руу
+    traverse(node.left);
+    result.push(node.val);
+    traverse(node.right);
   }
 
   traverse(root);
