@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES6", // JavaScript ES6 стандарт руу хөрвүүлнэ
+    "module": "CommonJS", // Node.js-д зориулж CommonJS модуль системийг ашиглана
+    "rootDir": "src", // Source файлуудын үндсэн хавтас
+    "outDir": "dist", // Компиляц хийгдсэн JavaScript файлуудын байршил
+    "strict": true, // Хамгийн нарийн төрөл шалгалтыг идэвхжүүлнэ
+    "esModuleInterop": true, // CommonJS модулиудыг зөв импортлох
+    "forceConsistentCasingInFileNames": true, // Файлын нэрийн том/жижиг үсгийн ялгааг алдаа болгох
+    "skipLibCheck": true, // Бусад сангуудын .d.ts файлыг шалгахгүй
+    "resolveJsonModule": true, // JSON файлуудыг импортлох боломжтой болгох
+    "allowJs": true, // JS файлуудыг оруулах
+    "sourceMap": true // Source map үүсгэх
+  },
+  "include": ["src"], // Компиляц хийх файлууд
+  "exclude": ["node_modules", "dist"] // Компиляц хийхгүй файлууд
+}
