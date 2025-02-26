@@ -12,6 +12,7 @@ class TreeNode {
 
 function inorderTraversal(root: TreeNode | null): number[] {
   const result: number[] = [];
+  console.log("-----values------", root);
 
   function traverse(node: TreeNode | null) {
     if (node === null) return;
@@ -24,6 +25,5 @@ function inorderTraversal(root: TreeNode | null): number[] {
   return result;
 }
 
-// ✅ Туршилт хийх
 const root = new TreeNode(1, null, new TreeNode(2, new TreeNode(3), null));
 console.log(inorderTraversal(root)); // [1, 3, 2]
